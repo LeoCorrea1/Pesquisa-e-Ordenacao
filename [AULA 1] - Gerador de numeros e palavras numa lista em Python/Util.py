@@ -34,5 +34,7 @@ Util.exibir_lista_numeros(lista_numeros)
 
 lista2_numeros.extend(lista_numeros)
 
+print("\n")
+
 Util.popular_aleatorio_palavras(lista_palavras, 10, 6)
 Util.exibir_lista_palavras(lista_palavras)
