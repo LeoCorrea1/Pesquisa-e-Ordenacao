@@ -1,61 +1,14 @@
 ## Métodos de Ordenação
 
-### Bolha (Bubble Sort)
-Memória: interna  
-Estabilidade: estável  
-Complexidade: O(n²)  
-Porção ordenada: final  
-
-### Seleção (Selection Sort)
-Memória: interna  
-Estabilidade: instável  
-Complexidade: O(n²)  
-Porção ordenada: inicial  
-
-### Inserção (Insertion Sort)
-Memória: interna  
-Estabilidade: estável  
-Complexidade: O(n²)  
-Porção ordenada: inicial  
-
-### Pente (Comb Sort)
-Memória: interna  
-Estabilidade: instável  
-Complexidade: O(n²) (média: O(n log n))  
-Porção ordenada: final  
-
-### Agitação (Shakesort / Cocktail Sort)
-Memória: interna  
-Estabilidade: estável  
-Complexidade: O(n²)  
-Porção ordenada: final  
-
-### Shellsort
-Memória: interna  
-Estabilidade: instável  
-Complexidade: O(n log² n)  
-Porção ordenada: inicial  
-
-### Heapsort
-Memória: interna  
-Estabilidade: instável  
-Complexidade: O(n log n)  
-Porção ordenada: final  
-
-### Mergesort
-Memória: interna (ou externa em variantes)  
-Estabilidade: estável  
-Complexidade: O(n log n)  
-Porção ordenada: final  
-
-### Quicksort
-Memória: interna  
-Estabilidade: instável  
-Complexidade: O(n²) pior caso, O(n log n) na média  
-Porção ordenada: indefinida  
-
-### Bucketsort
-Memória: interna (normalmente)  
-Estabilidade: estável (se o método interno for estável)  
-Complexidade: O(n + k)  
-Porção ordenada: final  
+| Método                               | Memória                               | Estabilidade                                | Complexidade                           | Porção ordenada |
+|--------------------------------------|---------------------------------------|---------------------------------------------|----------------------------------------|-----------------|
+| Bolha (Bubble Sort)                  | interna                               | estável                                     | O(n²)                                  | final           |
+| Seleção (Selection Sort)             | interna                               | instável                                    | O(n²)                                  | inicial         |
+| Inserção (Insertion Sort)            | interna                               | estável                                     | O(n²)                                  | inicial         |
+| Pente (Comb Sort)                    | interna                               | instável                                    | O(n²) (média: O(n log n))              | final           |
+| Agitação (Shakesort / Cocktail Sort) | interna                               | estável                                     | O(n²)                                  | final           |
+| Shellsort                            | interna                               | instável                                    | O(n log² n)                            | inicial         |
+| Heapsort                             | interna                               | instável                                    | O(n log n)                             | final           |
+| Mergesort                            | interna (ou externa em variantes)     | estável                                     | O(n log n)                             | final           |
+| Quicksort                            | interna                               | instável                                    | O(n²) pior caso, O(n log n) na média   | indefinida      |
+| Bucketsort                           | interna (normalmente)                 | estável (se o método interno for estável)   | O(n + k)                               | final           |
