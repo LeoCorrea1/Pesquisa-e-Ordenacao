@@ -1,0 +1,14 @@
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\bin\Debug\net8.0\Pesquisa_Ordenacao.exe
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\bin\Debug\net8.0\Pesquisa_Ordenacao.deps.json
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\bin\Debug\net8.0\Pesquisa_Ordenacao.runtimeconfig.json
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\bin\Debug\net8.0\Pesquisa_Ordenacao.dll
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\bin\Debug\net8.0\Pesquisa_Ordenacao.pdb
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\obj\Debug\net8.0\Pesquisa_Ordenacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\obj\Debug\net8.0\Pesquisa_Ordenacao.AssemblyInfoInputs.cache
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\obj\Debug\net8.0\Pesquisa_Ordenacao.AssemblyInfo.cs
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\obj\Debug\net8.0\Pesquisa_Ordenacao.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\obj\Debug\net8.0\Pesquisa_Ordenacao.dll
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\obj\Debug\net8.0\refint\Pesquisa_Ordenacao.dll
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\obj\Debug\net8.0\Pesquisa_Ordenacao.pdb
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\obj\Debug\net8.0\Pesquisa_Ordenacao.genruntimeconfig.cache
+C:\Users\Administrador\source\repos\Pesquisa_Ordenacao\obj\Debug\net8.0\ref\Pesquisa_Ordenacao.dll
