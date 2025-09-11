@@ -97,6 +97,43 @@ comp, troca = selecao_conta(vetor.copy())
 print("Seleção - Comparações:", comp, "Trocas:", troca)
 ```
 
+```java
+public class SelecaoContagem {
+    public static void main(String[] args) {
+        int[] vetor = {30, 90, 10, 20, 80, 10, 20, 40, 10};
+
+        int[] resultado = selecaoContar(vetor.clone());
+        System.out.println("Seleção - Comparações: " + resultado[0] + ", Trocas: " + resultado[1]);
+    }
+
+    public static int[] selecaoContar(int[] vetor) {
+        int n = vetor.length;
+        int comparacoes = 0;
+        int trocas = 0;
+
+        for (int i = 0; i < n - 1; i++) {
+            int min_idx = i;
+            for (int j = i + 1; j < n; j++) {
+                comparacoes++;
+                if (vetor[j] < vetor[min_idx]) {
+                    min_idx = j;
+                }
+            }
+            if (min_idx != i) {
+                int temp = vetor[i];
+                vetor[i] = vetor[min_idx];
+                vetor[min_idx] = temp;
+                trocas++;
+            }
+        }
+
+        return new int[]{comparacoes, trocas};
+    }
+}
+
+```
+
+
 ---
 
 ## 6. Ordenar por segunda ou terceira chave
@@ -120,4 +157,61 @@ alunos = [
 alunos.sort(key=lambda x: (x.curso, x.nome))
 print(alunos)
 ```
+
+```JAVA
+class Aluno {
+    int codigo;
+    String curso;
+    String nome;
+
+    public Aluno(int codigo, String curso, String nome) {
+        this.codigo = codigo;
+        this.curso = curso;
+        this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        return codigo + "-" + curso + "-" + nome;
+    }
+}
+
+public class OrdenacaoAlunos {
+    // Método bolha por duas chaves: curso e nome
+    public static void bubbleSort(Aluno[] alunos) {
+        int n = alunos.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                // Compara primeiro pelo curso
+                if (alunos[j].curso.compareTo(alunos[j + 1].curso) > 0 ||
+                    (alunos[j].curso.equals(alunos[j + 1].curso) &&
+                     alunos[j].nome.compareTo(alunos[j + 1].nome) > 0)) {
+                    // Troca
+                    Aluno temp = alunos[j];
+                    alunos[j] = alunos[j + 1];
+                    alunos[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Aluno[] alunos = {
+            new Aluno(1, "Engenharia", "Alice"),
+            new Aluno(2, "Medicina", "Bob"),
+            new Aluno(3, "Engenharia", "Carlos"),
+            new Aluno(4, "Medicina", "Diana")
+        };
+
+        bubbleSort(alunos);
+
+        // Imprime a lista ordenada
+        for (Aluno a : alunos) {
+            System.out.println(a);
+        }
+    }
+}
+
+```
+
 
