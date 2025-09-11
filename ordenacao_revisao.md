@@ -55,6 +55,7 @@ Algoritmo é estável se mantém a ordem relativa de elementos iguais.
 
 ## 4. Verificar se lista está ordenada (Python)
 ```python
+//python
 def esta_ordenada(lista):
     for i in range(len(lista) - 1):
         if lista[i] > lista[i+1]:
@@ -76,6 +77,7 @@ Sequência: `[30, 90, 10, 20, 80, 10, 20, 40, 10]`
 - Seleção: implementar para contar
 
 ```python
+//python
 def selecao_conta(vetor):
     n = len(vetor)
     comparacoes = 0
@@ -98,6 +100,7 @@ print("Seleção - Comparações:", comp, "Trocas:", troca)
 ```
 
 ```java
+//java
 public class SelecaoContagem {
     public static void main(String[] args) {
         int[] vetor = {30, 90, 10, 20, 80, 10, 20, 40, 10};
@@ -138,6 +141,7 @@ public class SelecaoContagem {
 
 ## 6. Ordenar por segunda ou terceira chave
 ```python
+//python
 class Aluno:
     def __init__(self, codigo, curso, nome):
         self.codigo = codigo
@@ -159,6 +163,7 @@ print(alunos)
 ```
 
 ```JAVA
+//java
 class Aluno {
     int codigo;
     String curso;
