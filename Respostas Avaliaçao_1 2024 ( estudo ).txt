@@ -1,0 +1,34 @@
+1) O que é ordenação e qual o seu papel nos sistemas de informação?
+É organizar dados em ordem (crescente, decrescente, por chave). Serve pra facilitar buscas, consultas, relatórios e melhorar desempenho dos sistemas.
+
+2) Como se mede a complexidade em ordenação?
+Pelos números de comparações, trocas e tempo de execução, usando notação Big-O (ex: O(n²), O(n log n)).
+
+3) O que significa algoritmo estável e instável?
+
+Estável: mantém a ordem relativa de elementos iguais.
+
+Instável: pode trocar a ordem relativa entre elementos iguais.
+
+4) Qual algoritmo tem desempenho muito bom entre bolha, seleção, inserção e pente? Por quê?
+O pente (Comb Sort). Ele usa análise a distância (gap) que pré-organiza os dados, diminuindo comparações e trocas.
+
+5) Sequência [7, 3, 5, 1, 8, 2, 5]
+a) Bolha: 21 comparações, 12 trocas.
+b) Pente: menos, aprox. 13 comparações, 6 trocas.
+
+6) Estáveis e instáveis
+
+Estáveis: bolha, inserção.
+
+Instáveis: seleção, pente.
+
+7) Ordenação de objetos (Pessoa)
+Na classe Pessoa, implementar Comparable (Java) ou IComparable (C#), sobrescrever compareTo()/CompareTo() para comparar primeiro nome, depois curso.
+
+Exemplo (Java):
+
+public int compareTo(Pessoa p) {
+    int c = this.nome.compareTo(p.nome);
+    return (c != 0) ? c : this.curso.compareTo(p.curso);
+}
