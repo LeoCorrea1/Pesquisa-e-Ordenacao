@@ -1,4 +1,4 @@
-# Avaliação - Pesquisa e Ordenação (Respostas Curtas)
+# Avaliação - Pesquisa e Ordenação 
 
 ## 1) O que é ordenação e qual o seu papel nos sistemas de informação?
 É organizar dados em ordem (crescente, decrescente, por chave). Serve pra facilitar buscas, consultas, relatórios e melhorar desempenho dos sistemas.
