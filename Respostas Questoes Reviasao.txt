@@ -1,0 +1,113 @@
+1) Por que devemos ter sistemas com estruturas de dados ordenadas?
+
+Porque dados ordenados permitem buscas mais rápidas (ex: pesquisa binária), economizam tempo de processamento, facilitam análises, relatórios e integração entre sistemas.
+
+Além disso, várias estruturas avançadas (árvores, índices de banco, tabelas hash balanceadas) dependem de ordenação para funcionar eficientemente.
+
+2) Os sistemas de banco de dados possuem mecanismos de ordenação automática?
+
+Sim.
+
+Os índices em SGBDs (B-trees, B+trees, hash indexes) são estruturas que mantêm os dados automaticamente ordenados para agilizar buscas, filtragens e ordenações em consultas.
+
+3) Qual o melhor método de ordenação?
+
+Depende do contexto:
+
+Para pequenos conjuntos de dados: Insertion Sort é simples e eficiente.
+
+Para grandes conjuntos: Merge Sort e Quick Sort (O(n log n)) são melhores.
+
+Para estabilidade garantida: Merge Sort.
+
+Para velocidade prática na média: Quick Sort.
+
+Não existe um único "melhor" método, mas sim o mais adequado ao caso.
+
+4) Em que tamanho de estrutura, um ou outro método já começa a fazer diferença?
+
+Em listas pequenas (até algumas centenas de elementos), algoritmos O(n²) (como inserção) ainda funcionam bem.
+
+Em listas maiores (milhares ou milhões de elementos), a diferença fica clara:
+
+O(n²) fica inviável.
+
+O(n log n) se torna obrigatório.
+
+5) Nos benchmarks realizados nos algoritmos de ordenação, quais são as variáveis de acompanhamento?
+
+Número de comparações.
+
+Número de trocas/movimentações.
+
+Tempo de execução.
+
+Quantidade de elementos processados.
+
+6) O que é complexidade de um algoritmo?
+
+É o esforço computacional necessário para executar o algoritmo.
+
+Medido em tempo (comparações, trocas) e espaço (memória adicional).
+
+Representado em Notação Big-O:
+
+O(1): constante.
+
+O(log n): logarítmica.
+
+O(n): linear.
+
+O(n²): quadrática.
+
+O(n^x): polinomial.
+
+O(n!): fatorial (altíssimo custo).
+
+7) Quais mecanismos otimizam a ordenação em alguns métodos?
+
+Análise a distância (gap) → pré-organiza a lista:
+
+Pente (Comb Sort), Shell Sort, Quick Sort.
+
+Divisão recursiva da estrutura → divide e conquista:
+
+Quick Sort, Merge Sort.
+
+8) Os métodos que utilizam a distância para pré-organizar as estruturas são estáveis ou instáveis? Por quê?
+
+Geralmente instáveis, porque ao usar saltos (gaps), elementos iguais podem trocar a ordem relativa entre si.
+
+Exemplo: no Shell Sort, dois valores iguais podem ser reposicionados em ordens diferentes.
+
+9) Diferenças entre Quick e Merge Sort:
+
+Merge Sort:
+
+Divide sempre ao meio.
+
+Ordena na volta da recursão, usando intercalação.
+
+Estável.
+
+Requer memória extra.
+
+Quick Sort:
+
+Divide usando um pivô.
+
+Ordena o pivô em cada chamada.
+
+Geralmente instável.
+
+Mais rápido na prática, mas pior caso pode ser O(n²).
+
+10) O que Quick e Merge têm em comum?
+
+São algoritmos recursivos.
+
+Têm comportamento de árvore binária (cada divisão gera 2 ramos).
+
+A ordenação acontece na volta do empilhamento da recursão.
+
+Ambos têm complexidade média de O(n log n).
